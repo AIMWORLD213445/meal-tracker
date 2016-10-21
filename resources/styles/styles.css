@@ -1,3 +1,46 @@
-h1 {
-  color: blue;
+label{
+margin-left: 2%;
+
 }
+
+h1{
+  text-align: center;
+
+}
+
+h2{
+    margin-left: 1%;
+    text-decoration: underline;
+}
+
+h3{
+  margin-left: 1%;
+}
+
+h4{
+  margin-left: 1%;
+}
+
+.container{
+background-color: lightblue;
+}
+
+.jumbotron{
+background-color: azure;
+}
+
+.form-control{
+margin-left: 2%;
+max-width: 25em;
+}
+
+.submit-button{
+margin-left: 2%;
+margin-top: 2%;
+margin-bottom: 11%;
+}
+
+#editButton{
+  margin-left: 1%;
+}
+
