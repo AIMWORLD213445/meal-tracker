@@ -16,7 +16,7 @@ import { Meal } from './meal.model';
       </div>
       <div class="form-group">
         <label>Edit Meal Calories:</label>
-        <input class="form-control" [(ngModel)]="childChosenMeal.calories">
+        <input class="form-control" type="number" [(ngModel)]="childChosenMeal.calories">
       </div>
       <button class="btn btn-info submit-button" (click)="doneClicked()">Done Editing</button>
     </div>
