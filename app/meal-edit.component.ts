@@ -23,7 +23,7 @@ import { Meal } from './meal.model';
   `
 })
 
-export class EditMealCOmponent {
+export class MealEditComponent {
   @Input() childChosenMeal: Meal;
   @Output() doneClickSender = new EventEmitter();
   doneClicked() {
