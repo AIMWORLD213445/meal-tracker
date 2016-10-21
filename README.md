@@ -11,7 +11,7 @@ _A meal tracker application that allows users to input and view daily meals incl
 ## Setup/Installation Requirements
 
 _Clone the repo and open it up. Make sure to do the following so you can use the necessary npm/gulp/bower/SASS packages and utilities:
- *The package.JSON should have everything, so just use "npm install" and "bower install" to download packages in git. The gulpfile.js for this project should let you just use "gulp serve" to open up the web app once everything is downloaded._
+ The package.JSON should have everything, so just use "npm install" and "bower install" to download packages in git. The gulpfile.js for this project should let you just use "gulp serve" to open up the web app once everything is downloaded._
 
 ## Specifications
 
