@@ -4,8 +4,16 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'meal-list',
   template:`
+  <div class=row>
+    <label> Show High or Low Calorie Meals</label>
+    <select class="form-control"(change)="changeCalories($event.target.value)">
+      <option value="all"> All Meals</option>
+      <option value="under-500"> All meals with low calorie count</option>
+      <option value="over-500"> All meals with high calorie count</option>
+    </select>
+  </div>
   <h3> List of Daily Meals</h3>
-  <div *ngFor="let currentMeal of childMealList">
+  <div *ngFor="let currentMeal of childMealList | calories:selectedCalories">
     <h3>{{ currentMeal.name }} </h3>
     <h4> Details: {{ currentMeal.details }} </h4>
     <h4>Calorie Count: {{ currentMeal.calories }} </h4>
