@@ -5,19 +5,19 @@ import { Meal } from './meal.model';
   selector: 'my-app',
   template: `
   <div class ="container">
-    <div class ="jumbotron>"
+    <div class ="jumbotron">
       <h1>Meal Tracker</h1>
     </div>
     <div class="row">
       <meal-list [childMealList]="masterMeal"
-      (clickSender) = "showDetails($event)"           ></meal-list>
+      (clickSender) = "showDetails($event)"></meal-list>
     </div>
     <div class="row">
       <div class ="col-sm-6">
-        <new-meal (newMealSender) = "addMeal($event)"          ></new-meal>
+        <new-meal (newMealSender) = "addMeal($event)"></new-meal>
       </div>
       <div class="col-sm-6">
-        <edit-meal [childChosenMeal] = "selectedMeal"(doneClickSender) = "finishedEdit()"      ><edit-meal>
+        <edit-meal [childChosenMeal] = "selectedMeal"(doneClickSender) = "finishedEdit()"></edit-meal>
       </div>
     </div>
   </div>
@@ -36,7 +36,7 @@ export class AppComponent {
     this.selectedMeal = clickedMeal;
   }
 
-  finishedEditing() {
+  finishedEdit() {
     this.selectedMeal = null;
   }
 
