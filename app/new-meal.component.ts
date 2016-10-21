@@ -4,27 +4,28 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'new-meal',
   template:`
+  <form name="form">
   <h2> Enter a new meal:</h2>
   <div class="form-group">
     <label> Enter meal name:</label>
-    <input class="form-control" #newName>
+    <input required name="name" class="form-control" #newName />
   </div>
   <div>
     <label> Enter meal details:</label>
-    <input class="form-control" #newDetails>
+    <input required  name="details" class="form-control" #newDetails />
   </div>
   <br>
   <div>
     <label> Enter meal calorie count:</label>
-    <input class="form-control"  #newCalories>
+    <input required name="calories" type="number" class="form-control"  #newCalories />
   </div>
-
-  <button class = "btn btn-success submit-button" (click) = "
+  <button type="submit" class = "btn btn-success submit-button" ng-click="submitted=true" (click) = "
     addClicked(newName.value, newDetails.value,  newCalories.value);
     newName.value='';
     newDetails.value='';
     newCalories.value='';
     ">Add Meal</button>
+</form>
   `
 })
 
