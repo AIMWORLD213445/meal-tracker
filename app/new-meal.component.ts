@@ -4,17 +4,18 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'new-meal',
   template:`
-  <h2> Enter a new meal</h2>
+  <h2> Enter a new meal:</h2>
   <div class="form-group">
-    <label> Enter meal name</label>
+    <label> Enter meal name:</label>
     <input class="form-control" #newName>
   </div>
   <div>
-    <label> Enter meal details</label>
+    <label> Enter meal details:</label>
     <input class="form-control" #newDetails>
   </div>
+  <br>
   <div>
-    <label> Enter meal calorie count</label>
+    <label> Enter meal calorie count:</label>
     <input class="form-control"  #newCalories>
   </div>
 

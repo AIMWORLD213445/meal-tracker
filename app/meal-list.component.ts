@@ -12,12 +12,12 @@ import { Meal } from './meal.model';
       <option value="over-500"> All meals with high calorie count</option>
     </select>
   </div>
-  <h3> List of Daily Meals</h3>
+  <h2> List of Daily Meals:</h2>
   <div *ngFor="let currentMeal of childMealList | calories:selectedCalories">
     <h3>{{ currentMeal.name }} </h3>
     <h4> Details: {{ currentMeal.details }} </h4>
-    <h4>Calorie Count: {{ currentMeal.calories }} </h4>
-    <button class="btn btn-success" (click) = "editButtonClicked(currentMeal)"> Edit Meal</button>
+    <h4> Calorie Count: {{ currentMeal.calories }} </h4>
+    <button id="editButton" class="btn btn-success" (click) = "editButtonClicked(currentMeal)"> Edit Meal</button>
   </div>
 
   `
