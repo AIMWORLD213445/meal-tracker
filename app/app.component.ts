@@ -28,8 +28,8 @@ import { Meal } from './meal.model';
 
 export class AppComponent {
   public masterMeal: Meal[] = [
-    new Meal('Pizza', "two slices for lunch", 570),
     new Meal('Sushi', "A roll and a couple pieces of ngiri for dinner", 500),
+    new Meal('Pizza', "two slices for lunch", 570),
     new Meal('Cereal', "a bowl with almond milk for breakfast", 130)
   ];
 
